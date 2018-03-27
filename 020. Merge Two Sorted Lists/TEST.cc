@@ -41,8 +41,6 @@ TEST_CASE("Merge Two Sorted Lists", "[mergeTwoLists]")
         l2.next = &l3;
 
         auto Result = s.mergeTwoLists(&l1, &l2);
-
-        Result = s.mergeTwoLists(nullptr, &l1);
         for (auto i = 1; i != 5; ++i)
         {
             REQUIRE(Result->val == i);
